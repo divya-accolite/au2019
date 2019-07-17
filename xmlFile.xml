@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE web-app SYSTEM "systmId">
+<web-app><servlet><servlet-name>firstServlet</servlet-name><servlet-class>class com.accolite.au.java.UseAnnot</servlet-class></servlet><servlet-mapping><Servlet-name>firstServlet</Servlet-name><url-pattern>/class/UseAnnot</url-pattern></servlet-mapping></web-app>
