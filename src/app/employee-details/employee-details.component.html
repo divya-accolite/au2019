@@ -1,0 +1,34 @@
+<p>employee-details works!</p>
+
+<p> hiii {{empid}}</p>
+<div><h2>{{pageTitle}}</h2></div>
+     <div>
+         <table *ngIf='employees' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                     <td>Name</td>
+                     <td>Department</td>
+                     <td>Address</td>
+                 </tr>
+             </thead>
+             
+             <!-- <tr *ngFor='let employee of employees'  style="border:solid 1px black"> -->
+                <tr style="border:solid 1px black">
+                <!-- <ng-template [ngIf]='employee.EmployeeId == empid'></ng-template> -->
+                 <td #id ><label>{{employees.EmployeeId}}
+                 </label></td>
+                 <td #nam contenteditable = 'true'  ><label>{{employees.Name}}</label></td>
+                 <td #dept contenteditable='true' ><label>{{employees.Department}}</label></td>
+                 <td #addr contenteditable="update ? 'true': 'false'" ><label>{{employees.Address}}</label></td>
+                 <!-- <td><a [routerLink]="['/employee',employee.EmployeeId]">Details</a></td> -->
+                 <td *ngIf = "update === false"><button (click)="Update()">Update</button></td>
+                 <td *ngIf = 'update'><button (click)="Save(employees.id,id.innerText,nam.innerText,dept.innerText,addr.innerText)">Save</button></td>
+                 <td *ngIf ='update'><button (click)="Cancel()">Cancel</button></td>
+                 <!-- <td><a [routerLink]="['/edit',employee.EmployeeId]">Edit</a> </td> -->
+                <!-- </ng-template> -->
+                </tr>
+           
+             
+         </table>
+</div>

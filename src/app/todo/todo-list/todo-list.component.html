@@ -1,0 +1,22 @@
+<div><h2>Todo List</h2></div>
+     <div>
+         <table *ngIf='todo' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                 </tr>
+             </thead>
+             <tr *ngFor='let todos of todo' style="border:solid 1px black">
+                 
+                 
+                 <td (click) = "showdetails(todos)"><label>{{todos.name}}</label></td>
+                
+                
+                 <!-- <td><button (click)="DeleteEmployee(employee)">Delete</button></td> -->
+               
+             </tr>
+           
+         </table>
+       
+</div>
+

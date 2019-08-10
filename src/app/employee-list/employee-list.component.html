@@ -1,0 +1,24 @@
+<p>employee-list works!</p>
+<div><h2>{{pageTitle}}</h2></div>
+     <div>
+         <table *ngIf='employees' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                     <td>Name</td>
+                     
+                 </tr>
+             </thead>
+             <tr *ngFor='let employee of employees' style="border:solid 1px black">
+                 
+                 <td><label>{{employee.EmployeeId}}</label></td>
+                 <td><label><a [routerLink]="['/employee',employee.id]">{{employee.Name}}</a></label></td>
+                
+                
+                 <td><button (click)="DeleteEmployee(employee)">Delete</button></td>
+                
+             </tr>
+            
+         </table>
+        
+</div>

@@ -1,0 +1,25 @@
+<p>department-details works!</p>
+<div><h2>Department Details</h2></div>
+     <div>
+         <table *ngIf='department' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                     <td>Department Name</td>
+                     <td>Manager</td>
+                     
+                 </tr>
+             </thead>
+             
+             <tr *ngFor='let departments of department' style="border:solid 1px black">
+               <ng-template [ngIf]='departments.id == deptid'> 
+                <td><label>{{departments.id}}</label></td>
+               
+                <td><label>{{departments.name}}</label></td>
+                <td><label>{{departments.Manager}}</label></td>
+            </ng-template>
+            </tr>
+           
+             
+         </table>
+</div>

@@ -1,0 +1,75 @@
+{
+  "employee": [
+    {
+      "id": 2,
+      "EmployeeId": "505025",
+      "Name": "Jacky",
+      "Department": "Admin",
+      "Address": "3423 tort,Gujarat,34535345"
+    },
+    {
+      "id": 3,
+      "Name": "Candidate",
+      "EmployeeId": 34564,
+      "Department": "Manufacture",
+      "Address": "78 ,MP,78954"
+    },
+    {
+      "id": 5,
+      "Name": "divss",
+      "EmployeeId": 4656111,
+      "Department": "Sales",
+      "Address": "3/155 anbalayam,Tamilnadu,40078767"
+    },
+    {
+      "id": 6,
+      "Name": "ara",
+      "EmployeeId": 5612342,
+      "Department": "Admin",
+      "Address": "coimbatore,Tamilnadu,56776967"
+    },
+    {
+      "id": 7,
+      "Name": "Sadhuus",
+      "EmployeeId": 5948576,
+      "Department": "Manufacture",
+      "Address": "87 fortty,Maharata,40935267"
+    },
+    {
+      "id": 8,
+      "Name": "karthiii",
+      "EmployeeId": 5665437,
+      "Department": "Accounts",
+      "Address": "98 lame,Kerala,40876767"
+    },
+    {
+      "id": 9,
+      "Name": "Nalina",
+      "EmployeeId": 5611116,
+      "Department": "Admin",
+      "Address": "12 Thayappa nagar,Tamilnadu,49876534"
+    }
+  ],
+  "todo": [
+    {
+      "id": 1,
+      "name": "create",
+      "details": "To create the employee class"
+    },
+    {
+      "id": 2,
+      "name": "update",
+      "details": "To update the employee class"
+    },
+    {
+      "id": 3,
+      "name": "read",
+      "details": "To read the employee class"
+    },
+    {
+      "id": 4,
+      "name": "delete",
+      "details": "To delete the employee class"
+    }
+  ]
+}

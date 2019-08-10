@@ -1,0 +1,7 @@
+[
+{"id" : 1 , "name" : "IT" , "Manager" : "Naveen" },
+{"id" : 2 , "name" : "Admin" , "Manager" : "Dharshna" },
+{"id" : 3 , "name" : "Manufacture" , "Manager" : "Arav" },
+{"id" : 4 , "name" : "Sales" , "Manager" : "Divss" },
+{"id" : 5 , "name" : "HR" , "Manager" : "Malss" }
+]

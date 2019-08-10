@@ -1,0 +1,26 @@
+<p>todo-details works!</p>
+<div><h2>Todo Details</h2></div>
+     <div>
+         <table *ngIf='todo' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                     <td>Todo Name</td>
+                     <td>Details</td>
+                     
+                 </tr>
+             </thead>
+             
+             <!-- <tr *ngFor='let tod of todo' style="border:solid 1px black"> -->
+               <!-- <ng-template [ngIf]='departments.id == deptid'>  -->
+                <td #id ><label>{{todo.id}}</label></td>
+               
+                <td #nam contenteditable = 'true'><label>{{todo.name}}</label></td>
+                <td #labe ><label>{{todo.details}}</label></td>
+            <!-- </ng-template> -->
+            <!-- </tr> -->
+            <td *ngIf = "update === false"><button (click)="updatefunc()">Update</button></td>
+            <td *ngIf = 'update'><button (click)="updat(id.innerText,nam.innerText,labe.innerText)">Save</button></td>
+             
+         </table>
+</div>

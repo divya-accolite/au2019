@@ -1,0 +1,21 @@
+<p>department works!</p>
+<div><h2>Department</h2></div>
+     <div>
+         <table *ngIf='department' border="1" style="border:solid 1px black">
+             <thead>
+                 <tr style="border:solid 1px black">
+                     <td>ID</td>
+                     <td>Department  Name</td>
+                     <td>Manager</td>
+                 </tr>
+             </thead>
+             <tr *ngFor='let departments of department' style="border:solid 1px black">
+                 
+                 <td><label>{{departments.id}}</label></td>
+                 <td><label><a [routerLink]="['/department',departments.id]">{{departments.name}}</a></label></td>
+                 <td><label>{{departments.Manager}}</label></td>
+                 
+             </tr>
+            
+         </table>
+</div>
